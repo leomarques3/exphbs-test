@@ -3,43 +3,6 @@
         "name": {
             "first": "Fulano",
             "last": "de Tal"
-        },
-        "cardNumber": "9898 **** **** 3636"
-    },
-    "nationalExpenses": [
-        {
-            "date": "2019-02-01",
-            "expense": "Xis do Zé",
-            "city": "Porto Alegre",
-            "amountUSD": "1,90",
-            "amountBRL": 19.90
-        },
-        {
-            "date": "2019-02-02",
-            "expense": "Pizzaria Fim do mundo",
-            "city": "Porto Alegre",
-            "installment": "02/03",
-            "amountBRL": "60,30"
-        },
-        {
-            "date": "2019-02-03",
-            "expense": "Hamburgueria Gourmet",
-            "city": "Porto Alegre",
-            "amountUSD": "6,90",
-            "amountBRL": "450,26"
-        },
-        {
-            "date": "2019-02-04",
-            "expense": "Bar da esquina",
-            "city": "Porto Alegre",
-            "installment": "02/02",
-            "amountBRL": "6850,00"
-        },
-        {
-            "date": "2019-02-05",
-            "expense": "Hospital",
-            "city": "Porto Alegre",
-            "amountBRL": "1240,30"
         }
-    ]
+    }
 }

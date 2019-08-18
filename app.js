@@ -18,7 +18,7 @@ const hbs = exphbs.create({
 const pdfOptions = {
   view: path.join(__dirname, './views') + '/home.hbs',
   format: 'A4',
-  base: 'file://' + path.join(__dirname, '/public') + '/'
+  base: 'file:///' + path.join(__dirname, '/public') + '/'
 };
 
 app.engine('hbs', hbs.engine);
