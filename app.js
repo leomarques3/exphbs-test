@@ -27,10 +27,8 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/pdf', (req, res) => {
   var options = Object.assign({}, data, {pdf: true});
-  hbs.renderView('views/home.hbs', options, function(err, html) {
-    console.log(html);
-    pdf.create(html, pdfOptions).toStream(function(err, stream) {
-      console.log(stream);
+  hbs.renderView('views/home.hbs', options, (err, html) => {
+    pdf.create(html, pdfOptions).toStream((err, stream) => {
       res.setHeader('Content-disposition', 'inline; filename="test.pdf"');
       res.setHeader('Content-Type', 'application/pdf');
       stream.pipe(res);
