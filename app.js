@@ -31,6 +31,8 @@ app.get('/pdf', (req, res) => {
     console.log(html);
     pdf.create(html, pdfOptions).toStream(function(err, stream) {
       console.log(stream);
+      res.setHeader('Content-disposition', 'inline; filename="test.pdf"');
+      res.setHeader('Content-Type', 'application/pdf');
       stream.pipe(res);
     });
   });
